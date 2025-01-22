@@ -1,0 +1,25 @@
+.main {
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 12px;
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    background-color: var(--opac);
+
+    ul li {
+        display: inline-block;
+        margin-left: 24px;
+        a {
+            color: var(--white);
+        }
+    }
+}
+
+.body {
+    margin: 48px auto 0 auto;
+}
