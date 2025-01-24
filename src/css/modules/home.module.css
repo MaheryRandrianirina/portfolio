@@ -1,5 +1,5 @@
 .main {
-    padding: 24px;
+    padding-top: 24px;
 }
 
 .header {
@@ -11,10 +11,10 @@
     border-radius: 3px;
     background-color: var(--opac);
 
-    ul li {
+    .menu_item {
         display: inline-block;
         margin-left: 24px;
-        a {
+        .link {
             color: var(--white);
         }
     }
@@ -27,14 +27,14 @@
 
     .left {
         margin-left: 12px;
-        h1 {
+        .title {
             margin-bottom: 24px;
             position: relative;
         }
-        div {
+        .description_container {
             position: relative;
         }
-        h1::before, div:before {
+        .title::before, .description_container:before {
             content: "";
             height: 100%;
             width: 5px;
@@ -42,7 +42,7 @@
             left: -12px;
             background-color: var(--primary);
         }
-        small {
+        .description_label {
             font-style: italic;
             color: var(--primary);
         }
