@@ -19,7 +19,7 @@ type AboutContent<T extends Languages> = {
 }
 
 const skills = {
-    frontend: ["Typescript", "ReactJs", "NextJs", "Bootstrap", "MaterialUI", "Redux"],
+    frontend: ["Typescript", "ReactJs", "NextJs", "Bootstrap", "MaterialUI", "Redux", "Webpack", "Vite"],
     backend: ["PHP", "Laravel", "NodeJs", "Express", "NestJs", "MySQL", "MongoDB"],
     tools: ["Vscode", "Git", "Github", "Gitlab", "Docker", "Figma", "Photoshop", "Illustrator", "InDesign"]
 }

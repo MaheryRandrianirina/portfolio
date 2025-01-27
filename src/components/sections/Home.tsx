@@ -11,7 +11,7 @@ const navList = [
 ];
 
 export const Home: FC = ()=>{
-    return <section className={homeModule.main}>
+    return <section className={homeModule.main} id="home">
         <header className={homeModule.header}>
             <p>logo</p>
             <nav>

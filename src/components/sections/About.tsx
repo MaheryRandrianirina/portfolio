@@ -4,8 +4,8 @@ import { content } from "./_about-content";
 import Image from "next/image";
 
 export const About: FC = ()=>{
-    return <section className={aboutModule.main}>
-        <h4 className={aboutModule.title}>{content.fr?.title}</h4>
+    return <section className={aboutModule.main} id="about">
+        <h4 className="title">{content.fr?.title}</h4>
         <div className={aboutModule.articles}>
             <article className={aboutModule.article}>{content.fr?.description}</article>
             <article className={aboutModule.article}>&quot;{content.fr?.quote}&quot;</article>

@@ -1,0 +1,36 @@
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.project {
+    width: 300px;
+    .image_outline {
+        padding: 30px 15px;
+        background-color: var(--opac);
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 8px 8px var(--black);
+    }
+
+    .label {
+        margin-top: 6px;
+    }
+
+    .know_more {
+        background-color: transparent;
+        border: transparent;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-size: 11px;
+        cursor: pointer;
+        transition: color .3s;
+    }
+    .know_more:hover {
+        color: var(--opac);
+    }
+}

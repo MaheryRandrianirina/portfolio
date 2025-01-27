@@ -1,4 +1,4 @@
-import { Home, About } from "@/components/sections";
+import { Home, About, Projects } from "@/components/sections";
 
 export default function App() {
   return (
@@ -6,6 +6,7 @@ export default function App() {
       <main>
         <Home/>
         <About/>
+        <Projects/>
       </main>
     </div>
   );
