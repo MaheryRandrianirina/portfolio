@@ -1,13 +1,13 @@
 import { Languages } from "@/common/types"
 
-type Project = {
+export type Project = {
     title: string,
     description: string,
     image: string,
     usedTechnologies: string[]
 }
 
-type ProjectsContent<T extends Languages> = {
+export type ProjectsContent<T extends Languages> = {
     [key in keyof T]?: {
         title: string,
         projects: Project[],

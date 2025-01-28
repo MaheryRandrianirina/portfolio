@@ -1,23 +1,31 @@
-import { FC } from "react";
-import { content } from "./_projects-content";
+"use client"
+
+import { FC, useState } from "react";
+import { content, Project } from "./_projects-content";
 import projectsModule from "../../css/modules/projects.module.css";
+import { Article } from "./Article";
+import { createPortal } from "react-dom";
+import { ProjectModal } from "./ProjectModal";
 
 
 export const Projects: FC = ()=>{
+    
+    const [projectInModal, setProjectInModal] = useState<Project|null>(null);
+
+    const handleShowProjectModal = (project: Project)=>{
+        setProjectInModal(project);
+
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
+
     return <section id="projects">
         <h4 className="title">{content.fr?.title}</h4>
         <div className={projectsModule.articles}>
             {content.fr?.projects.map(project => {
-                return <article key={project.title} className={projectsModule.project}>
-                    <div className={projectsModule.image_outline}>
-                        <img className={projectsModule.image} src={project.image} alt={project.image}/>
-                    </div>
-                    <div className={projectsModule.label}>
-                        <p className={projectsModule.title}>{project.title}</p>
-                        <button className={projectsModule.know_more}>{content.fr?.button_label}</button>
-                    </div>
-                </article>
+                return <Article key={project.title} onClick={handleShowProjectModal} project={project} content={content}/>
             })}
         </div>
+        
+        {createPortal(<ProjectModal project={projectInModal}/>, document.body)}
     </section>
 }

@@ -17,7 +17,6 @@ body {
   max-width: 100vw;
   /*overflow-x: hidden; // due to learning boy animation overflow */ 
   overflow-y: visible;  /* due to learning boy animation overflow */
-  padding: 0 10%;
 }
 
 body {
@@ -25,6 +24,8 @@ body {
   background: var(--black);
   font-family: "montserrat";
   letter-spacing: 0.8px;
+  padding: 0 10%;
+  position: relative;
 }
 
 * {
@@ -48,4 +49,28 @@ body {
   left: -30px;
   top: 40%;
   background-color: var(--primary);
+}
+
+/**
+Project modal
+*/
+
+.main-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-color: var(--black);
+  z-index: 10;
+}
+
+.main-modal.benkyo {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #1e1116 85%), url("/images/projects/benkyo/benkyo_1.png");
+}
+.main-modal.active {
+  display: block;
 }
