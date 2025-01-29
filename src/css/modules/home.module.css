@@ -16,6 +16,12 @@
         margin-left: 24px;
         .link {
             color: var(--white);
+            transition: color .2s ease;
+        }
+    }
+    .menu_item:hover {
+        .link {
+            color: var(--primary);
         }
     }
 }

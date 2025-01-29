@@ -8,8 +8,14 @@
 }
 
 @font-face {
-  font-family: "montserrat";
-  src: url("./fonts/Montserrat-Regular.otf") format("otf");
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "sour";
+  font-style: italic;
+  src: url("./fonts/SourGummy-Italic-VariableFont_wdth\,wght.ttf");
 }
     
 html,
@@ -22,7 +28,7 @@ body {
 body {
   color: var(--white);
   background: var(--black);
-  font-family: "montserrat";
+  font-family: "roboto";
   letter-spacing: 0.8px;
   padding: 0 10%;
   position: relative;
@@ -66,6 +72,7 @@ Project modal
   background-size: 100% 40%;
   background-color: var(--black);
   z-index: 10;
+  padding: 30% 10%;
 }
 
 .main-modal.benkyo {
@@ -73,4 +80,9 @@ Project modal
 }
 .main-modal.active {
   display: block;
+}
+
+h3, h4, h5 {
+  font-family: "sour";
+  font-style: italic;
 }

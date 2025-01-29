@@ -4,7 +4,9 @@ export type Project = {
     title: string,
     description: string,
     image: string,
-    usedTechnologies: string[]
+    image_two: string,
+    usedTechnologies: string[],
+    about: string
 }
 
 export type ProjectsContent<T extends Languages> = {
@@ -24,13 +26,25 @@ export const content: ProjectsContent<Languages> = {
                 title: "Benkyo",
                 description: "lorem ipsum lorem ipsum",
                 image: "/images/projects/benkyo/benkyo_1.png",
-                usedTechnologies: ["PHP", "Javascript", "Scss", "Webpack", "MySQL"]
+                image_two: "/images/projects/benkyo/benkyo_2.png",
+                usedTechnologies: ["PHP", "Javascript", "Scss", "Webpack", "MySQL"],
+                about: "lorem lava be"
             },
             {
                 title: "Ari",
                 description: "lorem ipsum lorem ipsum",
                 image: "/images/projects/ari/application_gestion_de_projet_3.png",
-                usedTechnologies: ["NestJs", "ReactJs", "Material UI", "Axios", "MongoDB"]
+                image_two: "",
+                usedTechnologies: ["NestJs", "ReactJs", "Material UI", "Axios", "MongoDB"],
+                about: "lorem lava be"
+            },
+            {
+                title: "Ari",
+                description: "lorem ipsum lorem ipsum",
+                image: "/images/projects/ari/application_gestion_de_projet_3.png",
+                image_two: "",
+                usedTechnologies: ["NestJs", "ReactJs", "Material UI", "Axios", "MongoDB"],
+                about: "lorem lava be"
             }
         ],
         button_label: "En savoir plus"

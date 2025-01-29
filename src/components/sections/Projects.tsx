@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, useState } from "react";
+import { FC, MouseEventHandler, useState } from "react";
 import { content, Project } from "./_projects-content";
 import projectsModule from "../../css/modules/projects.module.css";
 import { Article } from "./Article";
@@ -18,6 +18,10 @@ export const Projects: FC = ()=>{
         window.scrollTo({top: 0, behavior: "smooth"});
     }
 
+    const handleCloseProjectModal: MouseEventHandler = ()=>{
+        setProjectInModal(null);
+    }
+
     return <section id="projects">
         <h4 className="title">{content.fr?.title}</h4>
         <div className={projectsModule.articles}>
@@ -26,6 +30,6 @@ export const Projects: FC = ()=>{
             })}
         </div>
         
-        {createPortal(<ProjectModal project={projectInModal}/>, document.body)}
+        {createPortal(<ProjectModal onClickCloseButton={handleCloseProjectModal} project={projectInModal}/>, document.body)}
     </section>
 }

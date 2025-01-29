@@ -1,0 +1,28 @@
+.main {
+    margin-top: 48px;
+}
+
+.img {
+    width: 100%;
+}
+
+.about {
+    margin-top: 24px;
+}
+
+.close_btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    padding: 8px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.close_btn:hover {
+    background-color: var(--opac);
+}
