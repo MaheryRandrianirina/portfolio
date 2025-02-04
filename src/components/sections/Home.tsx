@@ -19,6 +19,12 @@ export const Home: FC = ()=>{
                     {navList.map(menu => <li key={`${menu}_${navList.indexOf(menu)}`} className={homeModule.menu_item}><a href={`#${menu}`} className={homeModule.link}>{menu}</a></li>)}
                 </ul>
             </nav>
+            {/* <div className={homeModule.header_right}>
+                <select className={homeModule.languages_switcher}>
+                    <option value="fr">{content.fr?.languages.fr}</option>
+                    <option value="en">{content.fr?.languages.en}</option>
+                </select>
+            </div> */}
         </header>
         <div className={homeModule.body}>
             <div className={homeModule.left}>

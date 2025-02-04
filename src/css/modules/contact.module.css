@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px;
+    background-color: var(--opac);
+
+    .icon {
+        display: inline-block;
+        width: 24px;
+        margin-right: 12px;
+        fill: var(--white);
+    }
+
+    .link_container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .link {
+        color: var(--white);
+        display: inline-block;
+    }
+}

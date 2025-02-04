@@ -7,7 +7,8 @@ type HomeContent<T extends Languages> = {
         label: string,
         photo: {
             alt: string
-        }
+        },
+        languages: {[key in keyof Languages]: string}
     }
 }
 
@@ -18,6 +19,7 @@ export const content: HomeContent<Languages> = {
         label: "Créons quelque chose de grand ensemble !",
         photo: {
             alt: "Photo du super développeur relévant des défis jouraprès jour"
-        }
+        },
+        languages: {fr:"Français", en:"Anglais"}
     }
 }
