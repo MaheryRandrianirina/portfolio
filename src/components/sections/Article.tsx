@@ -9,8 +9,8 @@ export const Article: FC<{
     onClick: (project: Project) => void  
 }> = ({project, content, onClick})=>{
 
-    return <article className={projectsModule.project}>
-        <div className={projectsModule.image_outline}>
+    return <article className={projectsModule.project} id="project">
+        <div className={projectsModule.image_outline} id="image_outline">
             <img className={projectsModule.image} src={project.image} alt={project.image}/>
         </div>
         <div className={projectsModule.label}>

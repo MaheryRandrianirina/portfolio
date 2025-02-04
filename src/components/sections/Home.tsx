@@ -1,7 +1,12 @@
-import { FC } from "react";
+"use client";
+
+import { FC, use } from "react";
 import homeModule from "../../css/modules/home.module.css";
 import { content } from "@/components/sections/_home-content";
 import Image from "next/image";
+import { ThemeContext } from "@/common/context/ThemeContext";
+import { Sun } from "../icons/sun";
+import { Moon } from "../icons/moon";
 
 const navList = [
     "home",
@@ -11,6 +16,8 @@ const navList = [
 ];
 
 export const Home: FC = ()=>{
+    const [theme, toggleTheme] = use(ThemeContext);
+
     return <section className={homeModule.main} id="home">
         <header className={homeModule.header}>
             <p>logo</p>
@@ -19,12 +26,16 @@ export const Home: FC = ()=>{
                     {navList.map(menu => <li key={`${menu}_${navList.indexOf(menu)}`} className={homeModule.menu_item}><a href={`#${menu}`} className={homeModule.link}>{menu}</a></li>)}
                 </ul>
             </nav>
-            {/* <div className={homeModule.header_right}>
-                <select className={homeModule.languages_switcher}>
+            <div className={homeModule.header_right}>
+                {/* <select className={homeModule.languages_switcher}>
                     <option value="fr">{content.fr?.languages.fr}</option>
                     <option value="en">{content.fr?.languages.en}</option>
-                </select>
-            </div> */}
+                </select> */}
+                <div className="modes">
+                    {theme === "dark" ? <Sun className={homeModule.theme_icon} onClick={toggleTheme}/> : <Moon className={homeModule.theme_icon} onClick={toggleTheme}/>}
+                </div>
+            </div>
+
         </header>
         <div className={homeModule.body}>
             <div className={homeModule.left}>

@@ -1,10 +1,11 @@
 :root {
   --primary: #fe0d3a;
-  --black: #1e1116;
+  --black: #20151a;
   --white: #ffffff;
   --opac: #ffffff0e;
   --border: #ffffff33;
   --list: #ffffffb0;
+  --black-opac: #1e111671;
 }
 
 @font-face {
@@ -34,6 +35,10 @@ body {
   position: relative;
 }
 
+body.light {
+  color: var(--black);
+  background: var(--white);
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -76,7 +81,7 @@ Project modal
 }
 
 .main-modal.benkyo {
-  background-image: linear-gradient(to bottom, var(--opac) 30%, #1e1116 85%), url("/images/projects/benkyo/benkyo_1.png");
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/benkyo/benkyo_1.png");
 }
 .main-modal.active {
   display: block;
@@ -85,4 +90,78 @@ Project modal
 h3, h4, h5 {
   font-family: "sour";
   font-style: italic;
+}
+
+/**
+Home light mode
+*/
+
+.light header {
+  
+  svg {
+    color: var(--black);
+    transition: fill .3s ease;
+  }
+  svg:hover {
+    fill: var(--black) !important;
+  }
+
+  a {
+    color: var(--black) !important;
+  }
+  a:hover {
+    color: var(--primary) !important;
+  }
+}
+
+/*
+About light mode
+*/
+
+.light #about {
+  article:nth-child(2) {
+    background-color: var(--black-opac);
+    color: var(--white);
+  }
+
+  video {
+    position: absolute;
+    right: 0;
+    bottom: -56px;
+    z-index: 3;
+  }
+
+  #skills div {
+    background-color: var(--black-opac);
+  }
+}
+
+/*
+Projects light
+*/
+.light #project #image_outline{
+  background-color: var(--black-opac);
+}
+
+/* Contact light */
+.light #contact_list {
+  svg {
+    fill: var(--black);
+  }
+  a {
+    color: var(--black);
+  }
+  span {
+    color: var(--black);
+  }
+}
+
+/* Light modal */
+.light .main-modal {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.light .main-modal.benkyo {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/benkyo/benkyo_1.png");
 }

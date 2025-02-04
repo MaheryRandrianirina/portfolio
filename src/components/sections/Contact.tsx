@@ -8,7 +8,7 @@ import { Linkedin } from "../icons/linkedin";
 export const Contact: FC = ()=>{
     return <section id="contact">
         <h4 className="title">{content.fr?.title}</h4>
-        <div className={ContactModule.list}>
+        <div className={ContactModule.list} id="contact_list">
             <div className={ContactModule.link_container}>
                 <Github className={ContactModule.icon}/>
                 <a className={ContactModule.link} href={content.fr?.list.github}>Github</a>

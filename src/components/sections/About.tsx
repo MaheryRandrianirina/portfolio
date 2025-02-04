@@ -16,8 +16,8 @@ export const About: FC = ()=>{
                 <Image src="/images/saiyan.png" width={24} height={24} alt="sayan skills" className={aboutModule.saiyan_icon}/>
                 <h5 className={aboutModule.skills_title}>{content.fr?.skills.title}</h5>
             </div>
-            <div className={aboutModule.skills_list}>
-                <div className={aboutModule.frontend}>
+            <div className={aboutModule.skills_list} id="skills">
+                <div className={aboutModule.frontend} >
                     <p className={aboutModule.skill_category}>Frontend</p>
                     <ul className={aboutModule.skills_list_container}>
                     {content.fr?.skills.list.frontend.map(skill => <li className={aboutModule.skill} key={skill}>{skill}</li>)}
