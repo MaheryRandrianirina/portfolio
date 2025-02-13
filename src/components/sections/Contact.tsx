@@ -11,15 +11,15 @@ export const Contact: FC = ()=>{
         <div className={ContactModule.list} id="contact_list">
             <div className={ContactModule.link_container}>
                 <Github className={ContactModule.icon}/>
-                <a className={ContactModule.link} href={content.fr?.list.github}>Github</a>
+                <a target="_blank" className={ContactModule.link} href={content.fr?.list.github}>Github</a>
             </div>
             <div className={ContactModule.link_container}>
                 <Email className={ContactModule.icon}/>
-                <span>{content.fr?.list.email}</span>
+                <a className={ContactModule.link} href={"mailto:" + content.fr?.list.email}>Email</a>
             </div>
             <div className={ContactModule.link_container}>
                 <Linkedin className={ContactModule.icon}/>
-                <a className={ContactModule.link} href={content.fr?.list.linkedin}>Linkedin</a>
+                <a target="_blank" className={ContactModule.link} href={content.fr?.list.linkedin}>Linkedin</a>
             </div>
         </div>
     </section>

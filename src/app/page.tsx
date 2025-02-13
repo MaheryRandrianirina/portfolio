@@ -4,12 +4,19 @@ import { ThemeContext } from "@/common/context/ThemeContext";
 import { Theme } from "@/common/types";
 import { Home, About, Projects, Contact } from "@/components/sections";
 import { useEffect, useState } from "react";
+import { addStyleOnView } from "./observer-effect";
 
 export default function App() {
   const [theme, setTheme]= useState<Theme>("dark");
 
   useEffect(()=>{
     document.body.className = theme;
+
+    addStyleOnView([
+      document.querySelector("#function") as HTMLElement,
+      document.querySelector("small") as HTMLElement,
+      document.querySelector(".about_me") as HTMLElement
+    ])
   }, [theme]);
 
   const toggleTheme = ()=>{

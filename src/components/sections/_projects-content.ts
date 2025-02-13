@@ -37,14 +37,6 @@ export const content: ProjectsContent<Languages> = {
                 image_two: "",
                 usedTechnologies: ["NestJs", "ReactJs", "Material UI", "Axios", "MongoDB"],
                 about: "lorem lava be"
-            },
-            {
-                title: "Ari",
-                description: "lorem ipsum lorem ipsum",
-                image: "/images/projects/ari/application_gestion_de_projet_3.png",
-                image_two: "",
-                usedTechnologies: ["NestJs", "ReactJs", "Material UI", "Axios", "MongoDB"],
-                about: "lorem lava be"
             }
         ],
         button_label: "En savoir plus"

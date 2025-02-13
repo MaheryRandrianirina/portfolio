@@ -6,6 +6,10 @@
   --border: #ffffff33;
   --list: #ffffffb0;
   --black-opac: #1e111671;
+  --duration: .45s ;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1) ;
+  --color-1: #d5dadd ;
+  --color-2: #51d5c2 ;
 }
 
 @font-face {
@@ -28,7 +32,9 @@ body {
 
 body {
   color: var(--white);
-  background: var(--black);
+  background-image: url("/images/bg.jpg");
+  background-size: 120%;
+  background-position: center;
   font-family: "roboto";
   letter-spacing: 0.8px;
   padding: 0 10%;
@@ -37,8 +43,9 @@ body {
 
 body.light {
   color: var(--black);
-  background: var(--white);
+  background-image: url("/images/bg_light.jpg");
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -87,7 +94,7 @@ Project modal
   display: block;
 }
 
-h3, h4, h5 {
+h3:not(#function), h4, h5 {
   font-family: "sour";
   font-style: italic;
 }
@@ -164,4 +171,40 @@ Projects light
 
 .light .main-modal.benkyo {
   background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/benkyo/benkyo_1.png");
+}
+
+
+.description, small, .about_me {
+  opacity: 0;
+  transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .3s ease;
+  transition-delay: .5s;
+}
+
+.description {
+  transform: translateY(30px);
+}
+
+small {
+  transition-delay: 3.5s;
+  display: block;
+  transform: translateX(30px);
+}
+
+.about_me {
+  transform: translateY(30px);
+}
+
+.visible {
+  transform: translate(0) !important;
+  opacity: 1 !important;
+}
+
+/* Home */
+
+/* Text animation*/
+.hello {
+  font-family: "sour";
+  span {
+    font-size: 32px;
+  }
 }

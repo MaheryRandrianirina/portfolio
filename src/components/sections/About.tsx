@@ -7,7 +7,7 @@ export const About: FC = ()=>{
     return <section className={aboutModule.main} id="about">
         <h4 className="title">{content.fr?.title}</h4>
         <div className={aboutModule.articles}>
-            <article className={aboutModule.article}>{content.fr?.description}</article>
+            <article className={aboutModule.article + " about_me"}>{content.fr?.description}</article>
             <article className={aboutModule.article}>&quot;{content.fr?.quote}&quot;</article>
             <video className={aboutModule.learning_animation} loop autoPlay src="/animations/learning.webm"></video>
         </div>

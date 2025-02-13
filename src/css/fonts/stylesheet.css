@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('SourGummy-BlackItalic.woff2') format('woff2'),
+        url('SourGummy-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+

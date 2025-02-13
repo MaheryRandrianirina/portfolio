@@ -1,17 +1,16 @@
 .main {
     padding-top: 24px;
+    position: relative;
 }
 
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 12px;
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    background-color: var(--opac);
-
+    z-index: 10;
     .menu_item {
         display: inline-block;
         margin-left: 24px;
@@ -36,7 +35,7 @@
 }
 
 .body {
-    margin: 48px auto 0;
+    margin: 96px auto 0;
     display: flex;
     justify-content: space-between;
 
@@ -45,6 +44,9 @@
         .title {
             margin-bottom: 24px;
             position: relative;
+            transform: translateY(15px);
+            opacity: 0;
+            transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .3s;
         }
         .description_container {
             position: relative;
