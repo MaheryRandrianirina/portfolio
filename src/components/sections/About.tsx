@@ -6,13 +6,12 @@ import Image from "next/image";
 export const About: FC = ()=>{
     return <section className={aboutModule.main} id="about">
         <h4 className="title">{content.fr?.title}</h4>
-        <div className={aboutModule.articles}>
+        <div className={aboutModule.articles} id="articles">
             <article className={aboutModule.article + " about_me"}>{content.fr?.description}</article>
             <article className={aboutModule.article}>&quot;{content.fr?.quote}&quot;</article>
-            <video className={aboutModule.learning_animation} loop autoPlay src="/animations/learning.webm"></video>
         </div>
         <div className={aboutModule.skills}>
-            <div className={aboutModule.skills_head}>
+            <div className={`${aboutModule.skills_head} skills-title`}>
                 <Image src="/images/saiyan.png" width={24} height={24} alt="sayan skills" className={aboutModule.saiyan_icon}/>
                 <h5 className={aboutModule.skills_title}>{content.fr?.skills.title}</h5>
             </div>

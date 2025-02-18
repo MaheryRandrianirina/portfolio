@@ -24,7 +24,7 @@ export const Projects: FC = ()=>{
 
     return <section id="projects">
         <h4 className="title">{content.fr?.title}</h4>
-        <div className={projectsModule.articles}>
+        <div className={`${projectsModule.articles} articles`}>
             {content.fr?.projects.map(project => {
                 return <Article key={project.title} onClick={handleShowProjectModal} project={project} content={content}/>
             })}

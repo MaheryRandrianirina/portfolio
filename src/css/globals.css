@@ -8,8 +8,6 @@
   --black-opac: #1e111671;
   --duration: .45s ;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1) ;
-  --color-1: #d5dadd ;
-  --color-2: #51d5c2 ;
 }
 
 @font-face {
@@ -33,7 +31,6 @@ body {
 body {
   color: var(--white);
   background-image: url("/images/bg.jpg");
-  background-size: 120%;
   background-position: center;
   font-family: "roboto";
   letter-spacing: 0.8px;
@@ -44,6 +41,8 @@ body {
 body.light {
   color: var(--black);
   background-image: url("/images/bg_light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -111,6 +110,19 @@ Home light mode
   }
   svg:hover {
     fill: var(--black) !important;
+  }
+
+  .menu__item .icon {
+    fill: var(--black)
+  }
+  .menu__item.active .icon {
+    fill: var(--primary);
+  }
+  .menu__item.active::after {
+    background-color: var(--primary);
+  }
+  .menu__text.active {
+    color: var(--primary);
   }
 
   a {
@@ -199,12 +211,74 @@ small {
   opacity: 1 !important;
 }
 
-/* Home */
+/* begin : Home */
 
 /* Text animation*/
 .hello {
   font-family: "sour";
   span {
     font-size: 32px;
+  }
+}
+
+/* end : Home */
+
+/* begin : Responsive*/
+@media screen and (max-width: 800px) {
+  .title {
+    text-align: center;
+  }
+  .title::before {
+    background-color: transparent!important;
+  }
+
+  .home-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 36px;
+
+    h3::before, .hello-container::before {
+      background-color: transparent!important;
+    }
+  }
+
+  #about {
+    .about_me {
+      text-align: center;
+    }
+
+    #articles {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
+    .skills-title {
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    #skills {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .feather-sun, .feather-moon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #projects {
+    .articles {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+    }
   }
 }

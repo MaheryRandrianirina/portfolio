@@ -1,14 +1,15 @@
 .articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: nowrap;
+    column-gap: 12px;
 }
 
 .project {
     width: 300px;
     .image_outline {
         padding: 30px 15px;
-        background-color: var(--opac);
+        background-color: var(--border);
     }
     
     .image {

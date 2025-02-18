@@ -80,7 +80,6 @@ export const Home: FC = ()=>{
         const header = headerRef.current;
         if(homeSection && header) {
             const widthPercent = homeSection.offsetWidth * 100 / window.innerWidth;
-            console.log(window, widthPercent)
             header.style.width = `${widthPercent}%`;
         }
     }, []);
@@ -100,10 +99,10 @@ export const Home: FC = ()=>{
             </div>
 
         </header>
-        <div className={homeModule.body}>
+        <div className={`${homeModule.body} home-body`}>
             <div className={homeModule.left}>
                 <h3 className={homeModule.title} id="function">{content.fr?.title}</h3>
-                <div className={homeModule.description_container}>
+                <div className={`${homeModule.description_container} hello-container`}>
                     <Hello/>
                     <small className={homeModule.description_label}>{content.fr?.label}</small>
                 </div>

@@ -11,12 +11,13 @@ export default function App() {
 
   useEffect(()=>{
     document.body.className = theme;
-
+    
     addStyleOnView([
       document.querySelector("#function") as HTMLElement,
       document.querySelector("small") as HTMLElement,
-      document.querySelector(".about_me") as HTMLElement
-    ])
+      document.querySelector(".about_me") as HTMLElement,
+      document.querySelector("#articles") as HTMLElement
+    ]);
   }, [theme]);
 
   const toggleTheme = ()=>{
