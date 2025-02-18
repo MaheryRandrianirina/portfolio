@@ -16,7 +16,11 @@ export default function App() {
       document.querySelector("#function") as HTMLElement,
       document.querySelector("small") as HTMLElement,
       document.querySelector(".about_me") as HTMLElement,
-      document.querySelector("#articles") as HTMLElement
+      document.querySelector("#articles") as HTMLElement,
+      document.querySelector("#home") as HTMLElement,
+      document.querySelector("#about") as HTMLElement,
+      document.querySelector("#projects") as HTMLElement,
+      document.querySelector("#contact") as HTMLElement
     ]);
   }, [theme]);
 
