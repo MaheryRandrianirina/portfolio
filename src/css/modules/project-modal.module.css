@@ -8,6 +8,16 @@
 
 .about {
     margin-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.5em;
+    letter-spacing: 1.2;
+
+    .techno_title {
+        margin-top: 12px;
+    }
+    .technos {
+        list-style-position: inside;
+    }
 }
 
 .close_btn {

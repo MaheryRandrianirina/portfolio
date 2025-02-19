@@ -7,7 +7,7 @@ export const addStyleOnView = (elementsOnView:HTMLElement[]) => {
             if(entry.intersectionRatio < 0.75) return;
 
             const sectionsIds = ["home", "about", "projects", "contact"];
-            console.log(entry.target)
+            
             if(entry.target.id === "articles") {
                 if(entry.target.querySelector('video')) return;
 

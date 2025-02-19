@@ -16,7 +16,13 @@ export const ProjectModal: FC<{
         </header>
         <main className={projectModalModule.main}>
             <img className={projectModalModule.img} src={project?.image_two} alt="" />
-            <p className={projectModalModule.about}>{project?.about}</p>
+            <div className={projectModalModule.about}>
+                <p className={projectModalModule.definition}>{project?.about.definition}</p>
+                <p className={projectModalModule.techno_title}>{project?.about.techno_title}</p>
+                <ul className={projectModalModule.technos}>{
+                    project?.usedTechnologies.map(techno => <li key={techno}>{techno}</li>)
+                }</ul>
+            </div>
         </main>
     </div>
 }

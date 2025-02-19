@@ -89,6 +89,18 @@ Project modal
 .main-modal.benkyo {
   background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/benkyo/benkyo_1.png");
 }
+.main-modal.ari {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.main-modal.prs {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.main-modal.etalk {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.main-modal.manaocv {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
 .main-modal.active {
   display: block;
 }
@@ -184,7 +196,21 @@ Projects light
 .light .main-modal.benkyo {
   background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/benkyo/benkyo_1.png");
 }
-
+.light .main-modal.ari {
+  img {
+    border: 1px solid var(--black);
+  }
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.light .main-modal.prs {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.light .main-modal.etalk {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
+.light .main-modal.manaocv {
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+}
 
 .description, small, .about_me {
   opacity: 0;
