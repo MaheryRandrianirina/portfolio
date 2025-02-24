@@ -93,7 +93,7 @@ Project modal
   background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
 }
 .main-modal.prs {
-  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/prs/image1.png");
 }
 .main-modal.etalk {
   background-image: linear-gradient(to bottom, var(--opac) 30%, #20151a 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
@@ -203,7 +203,7 @@ Projects light
   background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
 }
 .light .main-modal.prs {
-  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");
+  background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/prs/image1.png");
 }
 .light .main-modal.etalk {
   background-image: linear-gradient(to bottom, var(--opac) 30%, #fff 85%), url("/images/projects/ari/application_gestion_de_projet_4.png");

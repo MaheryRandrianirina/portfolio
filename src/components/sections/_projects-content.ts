@@ -53,8 +53,8 @@ export const content: ProjectsContent<Languages> = {
             {
                 title: "PRS",
                 description: "Une application utilisee au sein de l'entreprise pour le remboursement des frais patients dans le cadre d'une etude clinique.",
-                image: "/images/projects/ari/application_gestion_de_projet_3.png",
-                image_two: "/images/projects/ari/application_gestion_de_projet_3.png",
+                image: "/images/projects/prs/image2.png",
+                image_two: "/images/projects/prs/image2.png",
                 usedTechnologies: ["Laravel", "Javascript", "Mysql"],
                 about: {
                     definition: `PRS est utilise par les patients d'une etude clinique, les laboratoires, ainsi que les agents du service de remboursement patients de Pharmaspecific.
